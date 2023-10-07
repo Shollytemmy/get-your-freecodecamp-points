@@ -1,0 +1,159 @@
+:root {
+
+
+  
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  height: 100px;
+  background-color: #333;
+  justify-content: space-around;
+}
+
+.header img{
+  width: 50%;
+ 
+  object-fit: cover;
+}
+
+section{
+  
+}
+
+section .home{
+  width: 80%;
+  border: 0px solid green;
+  margin: 90px auto;
+  /* background-color: rgb(129, 175, 250); */
+}
+
+.search-input{
+  border: 0px solid red;
+  text-align: center;
+  /* background-color: rgb(66, 133, 244); */
+  
+  
+}
+.search-input input{
+  padding: 15px 20px;
+  width: 50%;
+  font-size: 16px;
+  border-bottom: none;
+  border-radius: 5px;
+  /* margin-top: -35px; */
+  
+}
+
+.search-input input:focus{
+  outline: none;
+
+}
+
+.search-input button{
+  padding: 15px 25px;
+  border: none;
+  background-color: rgb(129, 175, 250);
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  margin-left: 10px;
+}
+.header p{
+  background-color: rgb(66, 133, 244);
+  padding: 20px;
+  border-radius: 50%;
+  color: rgb(255, 255, 255);
+   font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.header p p{
+  width: 5px;
+  height: 5px;
+  background-color: green;
+  border-radius: 50%;
+}
+
+.header button:hover{
+  background-color: rgb(129, 175, 250);
+}
+
+
+.section{
+  display: flex;
+  height: 100vh;
+  
+}
+
+.section aside .logo{
+  text-align: center;
+}
+
+.section aside .logo img{
+  width: 30%;
+    object-fit: cover;
+    text-align: center;
+    /* padding: 50px; */
+    margin-top: 50px;
+}
+
+.section aside:first-child{
+  width: 50%;
+}
+
+.section aside:nth-child(2){
+  background-color: blue;
+  flex: 1;
+  display: grid;
+  place-items: center;
+  /* gap: 0; */
+}
+
+.section aside:nth-child(2) > form{
+  width: 70%;
+}
+.section aside:nth-child(2) > form .input-block{
+  outline: 0px solid red;
+  margin-bottom: 1rem;
+  width: 80%;
+}
+
+.section aside:nth-child(2) > form .input-block input{
+  padding: 10px 8px;
+  border-radius: 5px;
+  width: 95%;
+  outline: none;
+  font-size: 16px;
+  border: none;
+}
+
+.section aside:nth-child(2) > form .input-block > button{
+  margin-bottom: 1rem;
+  padding: 10px 8px;
+  width: 100%;background-color: rgb(66, 133, 244);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgb(0 0 0 / 25%) 0px 2px 4px 0px;
+  font-size: 16px;
+  user-select: none;
+  cursor: pointer;
+
+  
+}
+
+.section aside div:last-child > .gop-btn{
+  width: 100%;
+}
+
+p > a{
+  color:red;
+}
+
+p > a:hover{
+  color: white;
+}
+
