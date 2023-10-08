@@ -90,6 +90,11 @@ section .home{
 
 .section aside .logo{
   text-align: center;
+   /* background-color: red; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 80%;
 }
 
 .section aside .logo img{
@@ -98,6 +103,7 @@ section .home{
     text-align: center;
     /* padding: 50px; */
     margin-top: 50px;
+   
 }
 
 .section aside:first-child{

@@ -36,7 +36,7 @@ const SearchComp = () => {
 
       })
 
-      console.log(docRef)
+      // console.log(docRef)
 
         
       } catch (error) {

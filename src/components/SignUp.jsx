@@ -38,7 +38,12 @@ const SignUp = () => {
      
         <aside>
             <div className='logo'>
+                <div>
                 <img src={reactLogo } alt="React-icon" />
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, sed!
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, sed!
+                </p>
+              </div>
 
             </div>
         </aside>
