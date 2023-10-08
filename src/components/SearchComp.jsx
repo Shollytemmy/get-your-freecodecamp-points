@@ -1,3 +1,5 @@
+import { collection, addDoc, getDocs } from "firebase/firestore"; 
+import { db } from '../firebase'
 import {Fragment, useState} from 'react'
 import axios from 'axios'
 import { useUserAuth } from '../context/UserAuthProvider'
@@ -19,18 +21,50 @@ const SearchComp = () => {
     const image = data.entities?.user[username].picture
     // console.log(data)
 
-    if (!points) return new Error('not found')
-    setUser({...user, fullName: fullName, name: username, point: points, image:image })
+    if (!points) {
+
+     return new Error('not found')
+    } else{
+     
+      
+      try {
+      const docRef =   await addDoc(collection(db, "users"),{
+          fullName: fullName,
+           name: username, 
+           point: points,
+           image:image 
+
+      })
+
+      console.log(docRef)
+
+        
+      } catch (error) {
+        console.log(error.message)
+        
+      }
+
+      // setUser({...user, fullName: fullName, name: username, point: points, image:image })
+    }
+      
+    
+      
     // return { points, username }
   } catch (error) {
     return error
   }
 }
+
+
+// const querySnapshot = getDocs()
+
+
     
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        let input = e.target.elements[0].value
+        let input = e.target.elements[0].value;
+        e.target.elements[0].value = ""
         fetchFcPoints(input)
 
 

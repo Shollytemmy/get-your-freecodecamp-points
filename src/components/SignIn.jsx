@@ -89,10 +89,7 @@ const handleGoogleSignIn = async(e) => {
                 </div>
                 <p style={{textAlign: "center", color: "white"}}>Don't have an account? <Link to='/signup'>SignUp</Link> </p>
             </form>
-            {/* <div className='g-goo'>
-                
-                
-            </div> */}
+            
 
         </aside>
       

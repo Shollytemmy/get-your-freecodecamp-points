@@ -16,7 +16,7 @@ const Home = () => {
 
       <div className="home">
 
-      {/* <h1>Welcome Home: {user.email}</h1> */}
+      
       <SearchComp  />
       </div>
 

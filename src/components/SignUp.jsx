@@ -3,7 +3,7 @@ import {useNavigate, Link} from "react-router-dom"
 
 import reactLogo from "../assets/free-4.png"
 import { useUserAuth } from '../context/UserAuthProvider'
-import {GoogleButton} from 'react-google-button'
+
 
 const SignUp = () => {
     const [email, setEmail] = useState("")
@@ -64,10 +64,7 @@ const SignUp = () => {
                 </div>
                 <p style={{textAlign: "center", color: "white"}}>Do You have an account? <Link to='/'>LogIn</Link> </p>
             </form>
-            {/* <div className='g-goo'>
-                
-                
-            </div> */}
+            
 
         </aside>
       
