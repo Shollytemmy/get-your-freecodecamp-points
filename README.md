@@ -59,7 +59,7 @@ git clone https://github.com/
 # change into the `repo` directory
 cd repo
 
-# create a new branch to store any new changes. In this case your own branch(tips: use your name as the your branch name)
+# create a new branch to store any new changes. In this case your own branch(tips: use your name as your branch name)
 git branch my-branch
 
 # switch to that branch (line of development)
